@@ -1,0 +1,17 @@
+.holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.right{
+    margin-left: 40px;
+}
+
+.holder-bottom{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.right{
+    margin-right: 30px;
+}

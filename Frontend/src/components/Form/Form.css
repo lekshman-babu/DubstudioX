@@ -1,0 +1,235 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: .8em;
+    width: 700px;
+    background: var(--element-bg);
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    border-radius: 15px;
+    border: 2px solid var(--accent-dark);
+    height: 320px;
+}
+
+.top {
+    margin-top: 20px;
+}
+
+.how-it-works h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.form-comp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.spanChange {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.spanChange b {
+
+    font-size: 15px;
+    font-style: italic;
+}
+
+.spinnerCont {
+    display: none;
+    text-align: center;
+    padding: 0.8em;
+    width: 700px;
+    /* height: 210px; */
+    background: var(--element-bg);
+    flex-direction: column;
+    overflow: visible;
+    border-radius: 15px;
+    border: 2px solid var(--accent-dark);
+}
+
+.spinner {
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid var(--accent-dark);
+    border-radius: 50%;
+    border-top: 4px solid var(--element-bg);
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine;
+    animation: spin 2s linear infinite;
+    margin-left: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+.spinnerCont.show {
+    display: flex;
+}
+
+.wrapper.hide {
+    display: none;
+}
+
+input {
+    height: 40px;
+    width: 50%;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid var(--accent-dark);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    padding: 5px;
+
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-dark);
+    background: var(--accent-dark);
+    color: var(--element-bg);
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+}
+
+.file input {
+    margin-top: 15px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bottom div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom div select {
+    margin-left: 10px;
+}
+
+select {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-dark);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.label-el {
+    display: flex;
+    place-items: center;
+}
+
+.label-el>select {
+    margin-top: 15px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.how-it-works {
+    margin-left: 50px;
+}
+
+.how-it-works {
+    margin-left: 90px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.card-small {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: .8em;
+    width: 550px;
+    height: 200px;
+    background: var(--element-bg);
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    border-radius: 15px;
+    border: 2px solid var(--accent-dark);
+}
+
+.card-small p {
+    font-size: 16px;
+}
+
+.read-more {
+    font-weight: 800;
+    position: absolute;
+    bottom: 8px;
+}
+
+input[type="file" i] {
+    padding: 5px;
+}
+
+.errorTxt {
+    margin: 0;
+    font-size: 15px;
+}
+
+.desc {
+    text-align: justify;
+    width: 90%;
+    position: absolute;
+    top: 38px;
+}
+
+.sum {
+    display: flex;
+    flex-direction: row;
+}
+
+.choose-btn {
+    background-color: var(--main-bg);
+    color: black;
+}
+
+.sum>button {
+    margin-left: 30px;
+    margin-top: 15px;
+}

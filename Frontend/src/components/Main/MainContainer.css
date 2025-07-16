@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@350;550&display=swap');
+
+:root {
+    --accent-text-color: #495057;
+    --main-bg: hsl(180, 100%, 90%);
+    --main-bg: hsl(180, 100%, 90%);
+    --element-bg: #fafbff;
+
+    --accent: #501c9f;
+    --plyr-color-main: var(--accent);
+
+    --accent-dark: #3E3355;
+
+    --interactive-purple: #DBD6F5;
+    --interactive-purple-hover: #c3b8f8;
+    --interactive-primary-color: #d4fff4
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+
+    /* background-color: var(--main-bg); */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(212, 255, 244, 1) 30%, rgba(212, 255, 244, 1) 67%, rgba(255, 255, 255, 1) 100%);
+}
+
+h1 {
+    font-size: calc(35px + 2.5vw) !important;
+}
+
+h2 {
+    font-weight: 550;
+    color: var(--accent-dark);
+}
+
+#slogan-h2 {
+    margin-top: 8px !important;
+    margin-bottom: 48px;
+}
+
+h4 {
+    line-height: 1.5em;
+    color: var(--accent-text-color);
+}
+
+/* #main-container{
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01), var(--main-bg) 85%),radial-gradient(circle at center 440px, rgba(119, 44, 249, 0.25), transparent 60%);
+} */
+
+#send-request,
+#send-email {
+    background: var(--interactive-purple);
+    border: 2px solid var(--accent-dark);
+    color: var(--accent-dark);
+    transition: 0.5s;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    width: 100%;
+}
+
+#send-request:hover,
+#send-email:hover {
+    transition: 0.2s;
+    background: var(--interactive-purple-hover);
+}
+
+.plyr {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    width: 100%;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.lead {
+    font-size: 24px;
+}
+
+.nav-pills>.nav-item>.nav-link {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--accent);
+}
+
+.nav-pills>.nav-item>.nav-link:hover {
+    transition: 0.2s;
+    background-color: var(--interactive-purple);
+}
+
+.nav-pills>.nav-item>.nav-link.active {
+    color: white;
+    background-color: var(--accent);
+}
+
+.nav-pills {
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(62,51,85, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(152, 153, 182);
+}
+
+.navbar-nav>.nav-item>.nav-link {
+    color: var(--accent);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.navbar-nav>.nav-item>.nav-link:hover {
+    transition: 0.2s;
+    background-color: var(--interactive-primary-color);
+}
+
+
+#heading {
+    margin: 25px 0px 15px 0px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: calc(35px + 0.5vw);
+    color: var(--accent-dark);
+}
+
+
+#slogan {
+    font-weight: 700;
+}
+
+#navbar-heading {
+    font-size: calc(20px + 0.5vw);
+    font-weight: 550;
+    margin: 5px 25px 5px 10px;
+    color: var(--accent-dark);
+}
+
+#live-media-caption {
+    font-size: 18px;
+    color: var(--accent-text-color);
+}
+
+.form-floating>.form-control~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    opacity: 1;
+    color: rgb(110, 110, 110);
+    transform: scale(.85) translateY(-100%);
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown),
+.form-floating>.form-select {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 45px;
+    background-color: var(--element-bg);
+    border-color: rgb(176, 166, 188);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #9428a7;
+    box-shadow: 0 0 0 0.2rem rgba(170, 59, 185, 0.25);
+}
+
+.card {
+    padding: .8em;
+    height: 100%;
+    background: var(--element-bg);
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    border-radius: 15px;
+    border: 2px solid var(--accent-dark);
+}
+
+.card-info {
+    padding-top: 10px;
+}
+
+.card-link {
+    padding: .8em;
+    height: 100%;
+    background: var(--element-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: visible;
+    border-radius: 15px;
+    border: 2px solid var(--accent-dark);
+}
+
+/*Text*/
+.text-title {
+    font-weight: 550;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: fit-content;
+}
+
+#search-card {
+    padding: 0px;
+    padding-top: 20px;
+}
+
+#search-card-bottom {
+    padding-top: 10px;
+}
+
+.navbar {
+    border: 1px solid rgba(43, 46, 50, .1);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(43, 46, 50, .1);
+    background: var(--element-bg);
+}
+
+#ce-title {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+}
+
+#ce-title>p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1em;
+    font-size: 25px;
+    color: #4D248F;
+}
+
+#s-title {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    margin-right: 15px;
+}
+
+#s-title>p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 520;
+    line-height: 1em;
+    font-size: 20px;
+    color: var(--element-bg);
+}
+
+.form-floating>#email-input~label,
+.form-floating>#name-input~label {
+    color: var(--main-bg);
+}
+
+#waitlist-div {
+    width: 100%;
+    padding: .8em;
+    padding-top: 20px;
+    border-radius: 15px;
+}
+
+#contact-div {
+    width: 100%;
+    height: 100%;
+    display: table;
+    min-height: 150px;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+#contact {
+    color: var(--accent-dark);
+    background: #fafbff;
+    border: 2px solid rgb(75, 6, 75);
+    border-radius: 15px;
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+
+#contact-inner-div {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#waitlist-title {
+    font-size: calc(25px + 2.5vw);
+    font-weight: bold;
+    text-align: center;
+}
+
+p.content-paragraph {
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+
+#search-button-div {
+    margin-top: 30px;
+}
+
+#mail-to {
+    color: var(--accent);
+    transition: 0.5s;
+    background-color: rgb(241, 210, 255);
+    margin-bottom: 0px;
+    text-decoration: none;
+
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgb(241, 210, 255) 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+}
+
+#mail-to:hover {
+    /* background-color: rgb(241, 210, 255); */
+    background-position: left;
+}
+
+#waitlist-form {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    border: none;
+    padding-bottom: 0px;
+}
+
+@media screen and (max-width: 1150px) {
+
+    #slogan,
+    #waitlist-div #waitlist-title {
+        font-weight: 550;
+    }
+
+    p.lead {
+        font-size: 22px;
+    }
+
+    p.content-paragraph {
+        font-size: 18px;
+        line-height: 1.65em;
+    }
+
+    h4 {
+        font-size: 21px;
+    }
+}
+
+#send-email-div {
+    margin-top: 30px;
+}
+
+#waitlist-border-div {
+    border-right: 1px solid rgb(186, 186, 186);
+    border-bottom: none;
+}
+
+.product-link {
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.product-link:hover {
+    background-color: var(--interactive-purple);
+    color: black;
+}
+
+.info-icon {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    #waitlist-form {
+        width: 100%;
+    }
+
+    #search-button-div {
+        margin-top: 16px;
+    }
+
+    #send-email-div {
+        margin-top: 18px;
+    }
+
+    #waitlist-border-div {
+        /* border-bottom: 1px solid rgb(186, 186, 186); */
+        border-right: none;
+    }
+
+    #contact-div {
+        padding-bottom: 0px;
+    }
+}

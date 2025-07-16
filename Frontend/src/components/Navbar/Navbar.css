@@ -1,0 +1,28 @@
+.navbar-nav {
+    display: flex;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 10px;
+}
+
+#navbar-heading {
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem !important;
+}
